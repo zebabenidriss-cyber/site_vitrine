@@ -1,0 +1,69 @@
+:root {
+  --or: #C9A84C; 
+  --noir: #1A1A1A; 
+  --blanc: #FAFAF7; 
+  --gris: #6B6B6B; 
+  --fond: #F5F2EC;
+  --font-titre: Georgia, serif; 
+  --font-corps: 'Segoe UI', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-corps); background: var(--blanc); color: var(--noir); }
+nav { display: flex; justify-content: space-between; padding: 1.2rem 4rem; background: var(--noir); position: sticky; top: 0; z-index: 100; }
+.logo { font-family: var(--font-titre); color: var(--blanc); font-size: 1.6rem; }
+.logo span { color: var(--or); }
+nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
+nav ul a { text-decoration: none; color: #aaa; font-size: 0.9rem; }
+nav ul a.active { color: var(--or); }
+.New { 
+  height: 60vh; 
+  background-image: url('images/1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  position: relative;
+}
+.New::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.NewDelice {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.class-histoire, .class-histoire, .posi_cont { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 4rem; 
+  padding: 5rem 2rem; 
+  align-items: center; 
+  max-width: 1100px; 
+  margin: auto; 
+}
+.images img { width: 100%; border-radius: 4px; display: block; }
+.texte p { color: var(--gris); line-height: 1.6; margin-bottom: 1rem; }
+.label { color: var(--or); text-transform: uppercase; font-size: 0.8rem; margin-bottom: 0.5rem; }
+.New1 { padding: 5rem 2rem; background: var(--noir); color: white; }
+.val { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem; 
+  max-width: 1100px; 
+  margin: auto; 
+}
+.classe-icone { 
+  background: #2a2a2a; 
+  padding: 2rem; 
+  border-radius: 4px; 
+  border-top: 3px solid var(--or); 
+}
+.New-icone { font-size: 2rem; margin-bottom: 1rem; }
+footer { text-align: center; padding: 2rem; background: var(--noir); color: #666; font-size: 0.9rem; }
