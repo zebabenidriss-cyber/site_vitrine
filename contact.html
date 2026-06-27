@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Multi-Plages</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">Multi-Plages</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="plages.html">Plages</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contenu">
+    <h1>Contact</h1>
+    <p class="sous-titre">Une question ? Écris-nous, on te répondra rapidement.</p>
+    <p class="nous-contacter">Nous contacter</p>
+
+    <form id="monFormulaire">
+      <div class="champ">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Ton nom" required>
+      </div>
+      <div class="champ">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ton@email.com" required>
+      </div>
+      <div class="champ">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Écris ton message..." required></textarea>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <p id="resultat"></p>
+  </main>
+
+  <footer class="footer">
+    <p>© Multi-Plages</p>
+  </footer>
+
+  <script>
+    var formulaire = document.getElementById("monFormulaire");
+    var resultat = document.getElementById("resultat");
+
+    formulaire.addEventListener("submit", function(e) {
+      e.preventDefault();
+      resultat.textContent = " Merci ! Ton message a bien été envoyé.";
+      formulaire.reset();
+    });
+  </script>
+
+</body>
+</html>
