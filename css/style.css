@@ -1,3 +1,41 @@
+  /*apropos.html*/
+  :root {
+  --bleu:#1B3A6B;
+  --bleu-clair:#2a52a0;
+  --blanc:#FFFFFF;
+  --blanc-fond:#F0F4FF;
+  --gris:#5a6a8a;
+  --font-titre:Georgia,serif;
+  --font-corps:'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--font-corps);background:var(--blanc);color:var(--bleu);}
+nav{display:flex;justify-content:space-between;padding:1.2rem 4rem;background:var(--bleu);position:sticky;top:0;z-index:100;}
+.logo{font-family:var(--font-titre);color:var(--blanc);font-size:1.6rem;}
+.logo span{color:#C9A84C;}
+nav ul{list-style:none;display:flex;gap:2rem;align-items:center;}
+nav ul a{text-decoration:none;color:#ccd6f6;font-size:0.9rem;}
+nav ul a.active{color:var(--blanc);font-weight:600;}
+.New{height:60vh;background-image:url('images/1.png');background-size:cover;background-position:center;background-repeat:no-repeat;display:flex;align-items:center;justify-content:center;position:relative;}
+.New::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(27,58,107,0.6);}
+.NewDelice{position:relative;z-index:1;color:var(--blanc);text-align:center;}
+.New-Delice{font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:#ccd6f6;margin-bottom:0.8rem;}
+.sub{font-size:1rem;color:#ccd6f6;margin-top:0.5rem;}
+.class-histoire,.posi_cont{display:grid;grid-template-columns:1fr 1fr;gap:4rem;padding:5rem 2rem;align-items:center;max-width:1100px;margin:auto;}
+.Info-chef{background:var(--blanc-fond);}
+.images img{width:100%;border-radius:4px;display:block;}
+.texte p{color:var(--gris);line-height:1.6;margin-bottom:1rem;}
+.label{color:var(--bleu-clair);text-transform:uppercase;font-size:0.8rem;margin-bottom:0.5rem;}
+.New1{padding:5rem 2rem;background:var(--bleu);color:var(--blanc);}
+.labc{color:#ccd6f6;text-transform:uppercase;font-size:0.8rem;text-align:center;margin-bottom:0.5rem;}
+.centre{text-align:center;margin-bottom:2rem;}
+.val{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:1100px;margin:auto;}
+.classe-icone{background:var(--bleu-clair);padding:2rem;border-radius:4px;border-top:3px solid #ccd6f6;}
+.New-icone{font-size:2rem;margin-bottom:1rem;}
+.position{background:var(--blanc-fond);}
+.inf{list-style:none;margin-top:1rem;display:flex;flex-direction:column;gap:0.5rem;color:var(--gris);}
+footer{text-align:center;padding:2rem;background:var(--bleu);color:#ccd6f6;font-size:0.9rem;}
+
 /*style généraux*/
 * {
     margin: 0px;
@@ -31,6 +69,7 @@ body {
     line-height: 30px;
 }
 
+/*bar de navigation*/
 
 .logo {
     max-width: 100px;
@@ -74,6 +113,7 @@ body {
     color: #F9A826;
 }
 
+/*-------Image acceuil*/
 
 .header {
     background-image: url(../images/header.jpg);
@@ -87,6 +127,7 @@ body {
     justify-content: center;
 }
 
+/*menu carte*/
 .Menu {
     height: 70vh;
     padding-top: 30px;
@@ -163,6 +204,7 @@ body {
     object-fit: cover;
 }
 
+/*footer*/
 
 
 .footer {
