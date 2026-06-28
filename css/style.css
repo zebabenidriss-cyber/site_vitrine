@@ -204,8 +204,6 @@ body {
     object-fit: cover;
 }
 
-/*footer*/
-
 
 .footer {
     height: 30vh;
@@ -249,6 +247,99 @@ body {
     padding-top: 10px;
     font-size: 13px;
     color: #bbb;           
+}
+
+
+
+.contenu-formulaire {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contenu-formulaire h1 {
+    color: #053292; 
+    margin-bottom: 10px;
+}
+
+.sous-titre {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.nous-contacter {
+    font-weight: bold;
+    color: #053292;
+    margin-bottom: 20px;
+}
+
+
+#monFormulaire {
+    background-color: #ffffff;
+    border: 2px solid #053292; 
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.champ {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.champ label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.champ input,
+.champ textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.champ input:focus,
+.champ textarea:focus {
+    border-color: #053292;
+    outline: none;
+}
+
+
+#monFormulaire button {
+    width: 100%;
+    padding: 12px;
+    background-color: #053292;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#monFormulaire button:hover {
+    background-color: #0858F9; 
+}
+
+@media (max-width: 600px) {
+    .contenu-formulaire {
+        padding: 15px;
+    }
+
+    #monFormulaire {
+        padding: 20px;
+    }
 }
 
 
