@@ -16,7 +16,7 @@ nav{display:flex;justify-content:space-between;padding:1.2rem 4rem;background:va
 nav ul{list-style:none;display:flex;gap:2rem;align-items:center;}
 nav ul a{text-decoration:none;color:#ccd6f6;font-size:0.9rem;}
 nav ul a.active{color:var(--blanc);font-weight:600;}
-.New{height:60vh;background-image:url('images/1.png');background-size:cover;background-position:center;background-repeat:no-repeat;display:flex;align-items:center;justify-content:center;position:relative;}
+.New{height:60vh;background-image:url('../images/1.png');background-size:cover;background-position:center;background-repeat:no-repeat;display:flex;align-items:center;justify-content:center;position:relative;}
 .New::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(27,58,107,0.6);}
 .NewDelice{position:relative;z-index:1;color:var(--blanc);text-align:center;}
 .New-Delice{font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:#ccd6f6;margin-bottom:0.8rem;}
@@ -70,6 +70,7 @@ body {
 }
 
 /*bar de navigation*/
+
 .logo {
     max-width: 100px;
     height: 70px;
@@ -113,6 +114,7 @@ body {
 }
 
 /*-------Image acceuil*/
+
 .header {
     background-image: url(../images/header.jpg);
     height: 80vh;
@@ -202,7 +204,6 @@ body {
     object-fit: cover;
 }
 
-/*footer*/
 
 .footer {
     height: 30vh;
@@ -246,6 +247,99 @@ body {
     padding-top: 10px;
     font-size: 13px;
     color: #bbb;           
+}
+
+
+
+.contenu-formulaire {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contenu-formulaire h1 {
+    color: #053292; 
+    margin-bottom: 10px;
+}
+
+.sous-titre {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.nous-contacter {
+    font-weight: bold;
+    color: #053292;
+    margin-bottom: 20px;
+}
+
+
+#monFormulaire {
+    background-color: #ffffff;
+    border: 2px solid #053292; 
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+.champ {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.champ label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.champ input,
+.champ textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.champ input:focus,
+.champ textarea:focus {
+    border-color: #053292;
+    outline: none;
+}
+
+
+#monFormulaire button {
+    width: 100%;
+    padding: 12px;
+    background-color: #053292;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#monFormulaire button:hover {
+    background-color: #0858F9; 
+}
+
+@media (max-width: 600px) {
+    .contenu-formulaire {
+        padding: 15px;
+    }
+
+    #monFormulaire {
+        padding: 20px;
+    }
 }
 
 
