@@ -1,0 +1,103 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;background:#f8f9fa;
+}
+
+.logo {
+max-width: 100px;
+height: 70px;width: 100px;
+}
+
+.nav-bar {
+display: flex;
+align-items: center;justify-content: space-between;
+background-color: #182C64;padding: 20px 50px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);z-index: 999;
+position: sticky;top: 0;left: 0;
+}
+#topmenu {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#topmenu li {
+list-style: none;
+padding: 0px 10px;
+}
+
+#topmenu li a {
+color: #FFF;
+text-decoration: none;
+font-size: 16px;font-weight: 500px;text-transform: uppercase;
+}
+
+#topmenu li a:hover {
+color: #F9A826;
+}
+
+
+.header {
+background-image: url(../images/header.jpg);
+height: 80vh;
+width: 100%;
+background-size: cover;padding: 0 80px;display: flex;flex-direction: column;align-items: flex-start;justify-content: center;
+}
+
+.hero {
+background: lch(27.76% 106.5 308.06);
+color: white;text-align: center;padding: 50px 20px;
+}
+
+.container {
+max-width: 900px;
+margin: auto;padding: 20px;
+}
+
+.services {
+display: flex;
+gap: 20px;flex-wrap: wrap;
+}
+
+.card {
+background: white;
+padding: 20px;
+border-radius: 8px;flex: 1;
+min-width: 250px;box-shadow: 0 2px 5px rgba(0,0,0,.1);
+}
+
+.dark {
+background: lch(27.76% 106.5 308.06);
+color: white; padding: 30px 20px;
+}
+
+.footer {
+height: 30vh;
+background-color: #182C64;   
+color: #fff;              
+padding: 30px 20px;text-align: center;font-family: Arial, sans-serif;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-around;flex-wrap: wrap;margin-bottom: 20px;
+}
+
+.footer-section {
+margin: 10px;
+max-width: 250px;
+}
+
+.footer-section h3 {
+margin-bottom: 10px;
+color: yellow; font-size: 18px;
+}
+
+.footer-section p {
+margin: 5px 0;
+font-size: 14px;
+}
+
+.footer-bottom {
+border-top: 1px solid #444;
+padding-top: 10px;font-size: 13px;color: #bbb;           
+}
